@@ -31,8 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'users.apps.UsersConfig',  # Include the users app
-    'blog.apps.BlogConfig',  # Include the blog app
+    'users.apps.UsersConfig',
+    'crispy_forms', 
+    'crispy_bootstrap4',  # Use crispy forms with Bootstrap 4
+    'blog.apps.BlogConfig', 
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -118,6 +120,11 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap4'  # Specify the template pack for crispy forms
+CRISPY_TEMPLATE_PACK = 'bootstrap4' 
+ # Use Bootstrap 4 for crispy forms
+ 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
