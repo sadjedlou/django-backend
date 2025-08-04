@@ -21,7 +21,7 @@ from users import views as user_views  # Import user views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('register/', user_views.register, name='register'),  # URL for user registration
+    path('register/', user_views.register, name='register'),    
     path('blog/', include('blog.urls')), 
      # Include the blog app's URLs
 ]

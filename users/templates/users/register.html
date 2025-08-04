@@ -1,7 +1,7 @@
 {% extends "blog/base.html" %}
 {% block content %}
 <div class="content">
-    <form action="POST">
+    <form   method="POST">
         {% csrf_token %}
         <fieldset class="form-group">
             <legend class="border-bottom mb-4">Join Today</legend>
@@ -11,12 +11,8 @@
             <button type="submit" class="btn btn-outline-info">sign up </button>
         </div>
     </form>
-    <div class="border-top pt=3">
+    <div class="border-top pt-3">
         <small class="text-muted">Already have an account? <a class="ml-2" href="">Sign in</a></small>
-
     </div>
-
 </div>
-
-
 {% endblock content %}
